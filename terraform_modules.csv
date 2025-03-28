@@ -1,0 +1,2 @@
+module_name,project,repository_creation_required,spacelift_module_required
+terraform-gcp-workload-identity-pool,Information Systems,true,true
