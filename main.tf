@@ -11,6 +11,11 @@ resource "spacelift_module" "from_csv" {
   name        = each.value.module_name
   description = "Terraform module for ${each.value.project}"
   branch      = "main"
-  repository  = "testmultimodule"
+  repository  = var.repository  
   labels      = [each.value.project]
+}
+
+variable "repository" {
+  description = "Repository name where the modules are stored"
+  type        = string
 }
